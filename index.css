@@ -1,0 +1,66 @@
+/*signos de ayuda: <> ""/ {}*/
+body {
+    font-family: 'Roboto', sans-serif !important;
+    margin: 0;
+    padding-top: 70px;
+    background-color: #2e3233;
+    color: rgb(200, 200, 200);
+
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 97%;
+    background-color: #2e3233;
+    border-bottom: 1px solid #2e3233;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    color: rgb(200, 200, 200);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+}
+.logo img {
+    height: 40px;
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+}
+.menu {
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+}
+.menu a {
+    color: rgb(200, 200, 200);
+    font-weight: bold;
+    text-decoration: none;
+}
+.menu a:hover {
+    color: rgb(255, 255, 255);
+    }
+
+.logo a{
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+    
+}
+.logo a :hover{
+    color: rgb(255, 255, 255);
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
