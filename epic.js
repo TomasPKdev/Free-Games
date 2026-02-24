@@ -1,10 +1,9 @@
-fetch('https://api.allorigins.win/get?url=https://store-site-backend-static.ak.epicgames.com/freeGamesPromotions')
+fetch('https://corsproxy.io/?https://store-site-backend-static.ak.epicgames.com/freeGamesPromotions')
     .then(respuesta => respuesta.json())
     .then(datos => {
-        const json = JSON.parse(datos.contents);
-        const elementos = json.data.Catalog.searchStore.elements;
+        const elementos = datos.data.Catalog.searchStore.elements;
         const juegosFree = elementos.filter(juego => {
-    return juego.price.totalPrice.discountPrice === 0 && juego.price.totalPrice.originalPrice > 0;
+        return juego.price.totalPrice.discountPrice === 0 && juego.price.totalPrice.originalPrice > 0;
 });
     juegosFree.forEach(element => {
     const grid = document.querySelector(".games-grid")
